@@ -39,6 +39,19 @@ nav {
   font-size: 1.1rem;
   font-weight: 600;
 }
+.nav-logo-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-logo-container img{
+  height: 90px;
+  width: 150px;
+}
+.nav-logo-container p{
+  color: #fe9e0d;
+  font-size: 40px;
+}
 .primary-button {
   padding: 0.9rem 1.75rem;
   background-color: white;
