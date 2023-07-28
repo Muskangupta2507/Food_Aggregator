@@ -43,14 +43,14 @@ const Navbar = () => {
   ];
   return (
     <nav>
-      <div className="nav-logo-container">
+      <div className="nav-logo-container pad-4">
         <img src={Logo} alt="" />
       </div>
-      <div className="navbar-links-container">
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Testimonials</a>
-        <a href="">Contact</a>
+      <div className="navbar-links-container pad-4">
+        <a href="home">Home</a>
+        <a href="#about">About</a>
+        <a href="#test" >Testimonials</a>
+        <a href="#contact">Contact</a>
         <a href="">
           <BsCart2 className="navbar-cart-icon" />
         </a>
@@ -82,5 +82,6 @@ const Navbar = () => {
     </nav>
   );
 };
+
 
 export default Navbar;
