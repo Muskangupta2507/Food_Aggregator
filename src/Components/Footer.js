@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../Assets/Logo.svg";
+import Logo from "../Assets/dine_logo1.png";
 import { BsTwitter } from "react-icons/bs";
 import { SiLinkedin } from "react-icons/si";
 import { BsYoutube } from "react-icons/bs";
@@ -11,6 +11,7 @@ const Footer = () => {
       <div className="footer-section-one">
         <div className="footer-logo-container">
           <img src={Logo} alt="" />
+          <span>Dine Hub</span>
         </div>
         <div className="footer-icons">
           <BsTwitter />
@@ -21,12 +22,10 @@ const Footer = () => {
       </div>
       <div className="footer-section-two">
         <div className="footer-section-columns">
-          <span>Qualtiy</span>
-          <span>Help</span>
-          <span>Share</span>
-          <span>Carrers</span>
-          <span>Testimonials</span>
-          <span>Work</span>
+          <span>Home</span>
+          <span>About</span>
+          <span>Testimonial</span>
+          <span>Your Cart</span>
         </div>
         <div className="footer-section-columns">
           <span>244-5333-7783</span>

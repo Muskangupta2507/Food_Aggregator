@@ -1,34 +1,37 @@
 import React from "react";
 import PickMeals from "../Assets/pick-meals-image.png";
-import ChooseMeals from "../Assets/choose-image.png";
-import DeliveryMeals from "../Assets/delivery-image.png";
 
 const Work = () => {
   const workInfoData = [
     {
       image: PickMeals,
-      title: "Pick Meals",
-      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et sagittis duis elementum interdum facilisi bibendum.",
-    },
-    {
-      image: ChooseMeals,
-      title: "Choose How Often",
+      title: "Restaurant 1",
       text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et ",
     },
     {
-      image: DeliveryMeals,
-      title: "Fast Deliveries",
-      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et lorem ipsum",
+      image: PickMeals,
+      title: "Restaurant 2",
+      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et ",
+    },
+    {
+      image: PickMeals,
+      title: "Restaurant 3",
+      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et ",
+    },
+    {
+      image: PickMeals,
+      title: "Restaurant 4",
+      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et ",
     },
   ];
   return (
     <div className="work-section-wrapper pad-4">
       <div className="work-section-top">
-        <p className="primary-subheading">Work</p>
-        <h1 className="primary-heading">How It Works</h1>
+        <p className="primary-subheading">Order Now</p>
+        <h1 className="primary-heading">Best Restaurants</h1>
+        <h1 className="primary-heading">Near You</h1>
         <p className="primary-text">
-          Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et
-          elit. Dolor turpis molestie dui magnis facilisis at fringilla quam.
+          Best Restaurants in your city rated by our Trusteed Customer reviews and Qualified Anaylsts.
         </p>
       </div>
       <div className="work-section-bottom">

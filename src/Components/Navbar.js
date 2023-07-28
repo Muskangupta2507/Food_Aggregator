@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
-import Logo from "../Assets/Logo.svg";
+// import Logo from "../Assets/Logo.svg";
+import Logo from "../Assets/dine_logo1.png";
 import { BsCart2 } from "react-icons/bs";
 import { HiOutlineBars3 } from "react-icons/hi2";
 import Box from "@mui/material/Box";
@@ -16,6 +17,7 @@ import InfoIcon from "@mui/icons-material/Info";
 import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
+import { getActiveElement } from "@testing-library/user-event/dist/utils";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -45,11 +47,19 @@ const Navbar = () => {
     <nav>
       <div className="nav-logo-container pad-4">
         <img src={Logo} alt="" />
+        <p>Dine Hub</p>
       </div>
+<<<<<<< HEAD
       <div className="navbar-links-container pad-4">
         <a href="home">Home</a>
         <a href="#about">About</a>
         <a href="#test" >Testimonials</a>
+=======
+      <div className="navbar-links-container">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#testimonial">Testimonials</a>
+>>>>>>> b709de2ff48cf3cf8deb3879b6791461d7b68efc
         <a href="#contact">Contact</a>
         <a href="">
           <BsCart2 className="navbar-cart-icon" />
