@@ -6,13 +6,8 @@ import { FiArrowRight } from "react-icons/fi";
 
 const Home = () => {
   return (
-<<<<<<< HEAD
     <div className="home-container">
       {/* <Navbar /> */}
-=======
-    <div className="home-container" id="home">
-      <Navbar />
->>>>>>> b709de2ff48cf3cf8deb3879b6791461d7b68efc
       <div className="home-banner-container">
         <div className="home-bannerImage-container">
           <img src={BannerBackground} alt="" />
