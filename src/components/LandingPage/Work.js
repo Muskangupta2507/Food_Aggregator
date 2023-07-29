@@ -1,5 +1,6 @@
 import React from "react";
-import PickMeals from "../Assets/pick-meals-image.png";
+import PickMeals from "../../Assets/pick-meals-image.png";
+import { NavLink } from 'react-router-dom';
 
 const Work = () => {
   const workInfoData = [
@@ -36,6 +37,7 @@ const Work = () => {
       </div>
       <div className="work-section-bottom">
         {workInfoData.map((data) => (
+          <NavLink to="/resturent" className="text-decoration-none text-light">
           <div className="work-section-info" key={data.title}>
             <div className="info-boxes-img-container">
               <img src={data.image} alt="" />
@@ -43,6 +45,7 @@ const Work = () => {
             <h2>{data.title}</h2>
             <p>{data.text}</p>
           </div>
+          </NavLink>
         ))}
       </div>
     </div>

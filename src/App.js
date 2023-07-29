@@ -1,23 +1,21 @@
-import "./App.css";
-import Home from "./Components/Home";
-import About from "./Components/About";
-import Work from "./Components/Work";
-import Testimonial from "./Components/Testimonial";
-import Contact from "./Components/Contact";
-import Footer from "./Components/Footer";
-import Navbar from "./Components/Navbar";
+//import logo from './logo.svg';
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './components/OrderPage/Header';
+import CardsDetails from './components/OrderPage/CardsDetails';
+import Cards from './components/OrderPage/Cards';
+import {Routes,Route} from "react-router-dom"
+import HomePage from './HomePage'
 
 function App() {
   return (
-    <div className="App">
-      <Navbar/>
-      <Home />
-      <About />
-      <Work />
-      <Testimonial />
-      <Contact />
-      <Footer />
-    </div>
+    <>
+      <Routes>
+        <Route path='/' element={<HomePage />}/>
+        <Route path='/resturent' element={<Cards />}/>
+        <Route path='/cart/:id' element={<CardsDetails />}/>
+      </Routes>
+    </>
   );
 }
 
