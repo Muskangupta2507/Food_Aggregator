@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="footer-section-one">
         <div className="footer-logo-container">
           <img src={Logo} alt="" />
-          <span>Dine Hub</span>
+          <p>Dine<span>Hub</span></p>
         </div>
         <div className="footer-icons">
           <BsTwitter />
@@ -22,18 +22,20 @@ const Footer = () => {
       </div>
       <div className="footer-section-two">
         <div className="footer-section-columns">
-          <span>Home</span>
-          <span>About</span>
-          <span>Testimonial</span>
-          <span>Your Cart</span>
+        <span><a href="#home">Home</a></span>
+          <span><a href="#about">About</a></span>
+          <span><a href="#test">Testimonial</a></span>
+          <span><a href="#">Your Cart</a></span>
         </div>
         <div className="footer-section-columns">
-          <span>244-5333-7783</span>
-          <span>hello@food.com</span>
+          <span><a href="#">244-5333-7783</a></span>
+          <span><a href="#">hello@food.com</a></span>
+          <span><a href="#">press@food.com</a></span>
+          <span><a href="#">contact@food.com</a></span>
         </div>
         <div className="footer-section-columns">
-          <span>Terms & Conditions</span>
-          <span>Privacy Policy</span>
+          <span><a href="#">Terms & Conditions</a></span>
+          <span><a href="#">Privacy Policy</a></span>
         </div>
       </div>
     </div>
