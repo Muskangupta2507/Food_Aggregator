@@ -52,7 +52,7 @@ const Work = () => {
       </div>
       <div className="work-section-bottom">
         {workInfoData.map((data) => (
-          <NavLink to="/resturent" className="text-decoration-none text-light">
+          <NavLink to="/restaurant" className="text-decoration-none text-light">
           <div className="work-section-info" key={data.title}>
             <div className="info-boxes-img-container">
               <img src={data.image} alt="" />

@@ -245,6 +245,11 @@ nav {
 .footer-logo-container p span{
   color: #484848;
 }
+/* .footer-logo-container span{
+  color: #fe9e0d;
+  font-size: 40px;
+  display: flex;
+} */
 .footer-icons {
   margin-top: 2.5rem;
 }
