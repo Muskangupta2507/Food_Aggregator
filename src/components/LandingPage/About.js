@@ -26,10 +26,20 @@ const About = () => {
           facilisis at fringilla quam.
         </p>
         <div className="about-buttons-container">
-          <button className="secondary-button">Learn More</button>
-          <button className="watch-video-button">
-            <BsFillPlayCircleFill /> Watch Video
-          </button>
+          <a
+            href="https://en.wikipedia.org/wiki/Healthy_diet"
+            style={{ textDecoration: "none" }}
+          >
+            <button className="secondary-button">Learn More</button>
+          </a>
+          <a
+            href="https://www.youtube.com/watch?v=NqV1Ig4_nfI"
+            style={{ textDecoration: "none" }}
+          >
+            <button className="watch-video-button">
+              <BsFillPlayCircleFill /> Watch Video
+            </button>
+          </a>
         </div>
       </div>
     </div>

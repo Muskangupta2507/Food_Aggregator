@@ -204,11 +204,17 @@ const Header = () => {
                     </div> */}
                     
                     </NavLink>
+<<<<<<< HEAD
                     <container2>
                     {/* <Nav className="me-auto">
                         <NavLink to="/" className="text-decoration-none text-light" style={{fontSize:'25px', paddingLeft:'30px'}}>Home</NavLink>
                     </Nav> */}
                     <NavLink to="/"> <i class="fa-solid fa-home text-light" style={{ fontSize: 25, cursor: "pointer" }}></i></NavLink>
+=======
+                    <Nav className="me-auto">
+                        <NavLink to="/" className="text-decoration-none text-light" style={{ float:'right'}}><i class="fa fa-home" aria-hidden="true"></i></NavLink>
+                    </Nav>
+>>>>>>> 171f2ad7971c34259eba9a73ce160660f65cb9f5
 
                     <Badge badgeContent={getdata.length} color="primary"
                         id="basic-button"

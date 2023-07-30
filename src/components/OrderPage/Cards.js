@@ -36,18 +36,18 @@ const Cards = () => {
     <>
     <Header />
     <div className='container mt-3'>
-    <MDBCarousel showControls showIndicators dark fade>
+    <MDBCarousel showControls showIndicators white fade>
       <MDBCarouselItem
         className='w-100 d-block'
         itemId={1}
-        src={img1}
+        src={img2}
         alt='...'
       >
       </MDBCarouselItem>
-      <MDBCarouselItem
+      <MDBCarouselItem 
         className='w-100 d-block'
         itemId={2}
-        src={img2}
+        src={img1}
         alt='...'
       >
       </MDBCarouselItem>
@@ -60,8 +60,14 @@ const Cards = () => {
       >
       </MDBCarouselItem>
     </MDBCarousel>
+<<<<<<< HEAD
       <h2 className='text-center' style={{marginTop:'3rem'}} >Food for FOODIES!</h2>
       <div className="row d-flex justify-content-center align-items-center">
+=======
+
+      <h2 className='text-center foodie-text'>Food for FOODIES!</h2>
+      <div className="row d-flex justify-content-center align-items-center ">
+>>>>>>> 171f2ad7971c34259eba9a73ce160660f65cb9f5
         {
           data.map((element, id) => {
             return (
