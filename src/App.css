@@ -54,12 +54,18 @@ nav {
 }
 .nav-logo-container img{
   height: 90px;
-  width: 150px;
+  width: 110px;
 }
 .nav-logo-container p{
   color: #fe9e0d;
   font-size: 40px;
+  margin: 0;
+  font-family: Georgia, sans-serif;
+  }
+.nav-logo-container p span{
+  color: #484848;
 }
+
 .primary-button {
   padding: 0.9rem 1.75rem;
   background-color: #fe9e0d;
@@ -225,7 +231,19 @@ nav {
   margin-top: 10rem;
 }
 .footer-logo-container {
-  max-width: 110px;
+  max-width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-logo-container p{
+  color: #fe9e0d;
+  font-size: 20px;
+  margin: 0;
+  font-family: Georgia, sans-serif;
+}
+.footer-logo-container p span{
+  color: #484848;
 }
 .footer-icons {
   margin-top: 2.5rem;
@@ -248,11 +266,12 @@ nav {
   flex-direction: column;
   min-width: 190px;
 }
-.footer-section-columns span {
+.footer-section-columns span a{
   margin: 0.25rem 0rem;
   font-weight: 600;
   color: #4c4c4c;
   cursor: pointer;
+  text-decoration: none;
 }
 .testimonial-section-bottom {
   margin-top: 2rem;
@@ -343,7 +362,7 @@ nav {
     max-width: 600px;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 1100px) {
   nav{
     padding-left: 0rem;
     padding-right: 0rem;
