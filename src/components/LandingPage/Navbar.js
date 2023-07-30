@@ -50,14 +50,14 @@ const Navbar = () => {
         <p>Dine Hub</p>
       </div>
       <div className="navbar-links-container pad-4">
-        <a href="home">Home</a>
+        <a href="#ho">Home</a>
         <a href="#about">About</a>
         <a href="#test" >Testimonials</a>
         <a href="#contact">Contact</a>
-        <a href="">
+        {/* <a href="">
           <BsCart2 className="navbar-cart-icon" />
-        </a>
-        <button className="primary-button">Bookings Now</button>
+        </a> */}
+        <button className="primary-button">Order Now</button>
       </div>
       <div className="navbar-menu-container">
         <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
