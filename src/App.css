@@ -235,6 +235,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 1.5rem;
 }
 .footer-logo-container p{
   color: #fe9e0d;
