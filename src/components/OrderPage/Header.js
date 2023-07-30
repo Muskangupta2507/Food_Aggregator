@@ -205,7 +205,7 @@ const Header = () => {
                     
                     </NavLink>
                     <Nav className="me-auto">
-                        <NavLink to="/" className="text-decoration-none text-light" style={{fontSize:'25px', paddingLeft:'30px'}}>Home</NavLink>
+                        <NavLink to="/" className="text-decoration-none text-light" style={{ float:'right'}}><i class="fa fa-home" aria-hidden="true"></i></NavLink>
                     </Nav>
 
                     <Badge badgeContent={getdata.length} color="primary"
