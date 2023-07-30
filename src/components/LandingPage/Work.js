@@ -44,10 +44,10 @@ const Work = () => {
     <div id="orderNow" className="work-section-wrapper pad-4">
       <div className="work-section-top">
         <p className="primary-subheading">Order Now</p>
-        <h1 className="primary-heading">Best Restaurants</h1>
+        <h1 className="primary-heading">Popular Restaurants</h1>
         <h1 className="primary-heading">Near You</h1>
         <p className="primary-text">
-          Best Restaurants in your city rated by our Trusteed Customer reviews and Qualified Anaylsts.
+          
         </p>
       </div>
       <div className="work-section-bottom">
