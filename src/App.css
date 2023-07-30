@@ -138,6 +138,12 @@ nav {
   align-items: center;
   justify-content: center;
 }
+.secondary-button a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
 .secondary-button svg {
   margin-left: 0.75rem;
   font-size: 1.5rem;

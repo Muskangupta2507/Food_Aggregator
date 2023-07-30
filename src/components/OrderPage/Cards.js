@@ -60,14 +60,8 @@ const Cards = () => {
       >
       </MDBCarouselItem>
     </MDBCarousel>
-<<<<<<< HEAD
       <h2 className='text-center' style={{marginTop:'3rem'}} >Food for FOODIES!</h2>
       <div className="row d-flex justify-content-center align-items-center">
-=======
-
-      <h2 className='text-center foodie-text'>Food for FOODIES!</h2>
-      <div className="row d-flex justify-content-center align-items-center ">
->>>>>>> 171f2ad7971c34259eba9a73ce160660f65cb9f5
         {
           data.map((element, id) => {
             return (

@@ -41,7 +41,7 @@ const Work = () => {
     },
   ];
   return (
-    <div className="work-section-wrapper pad-4">
+    <div id="orderNow" className="work-section-wrapper pad-4">
       <div className="work-section-top">
         <p className="primary-subheading">Order Now</p>
         <h1 className="primary-heading">Best Restaurants</h1>
