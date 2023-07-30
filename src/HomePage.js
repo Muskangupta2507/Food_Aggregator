@@ -5,12 +5,12 @@ import Work from "./components/LandingPage/Work";
 import Testimonial from "./components/LandingPage/Testimonial";
 import Contact from "./components/LandingPage/Contact";
 import Footer from "./components/LandingPage/Footer";
-import Navbar from "./components/LandingPage/Navbar"; 
+import Navbar from "./components/LandingPage/Navbar";
 
 function HomePage() {
   return (
     <div className="App">
-      <Navbar/>
+      <Navbar />
       <Home />
       <About />
       <Work />
