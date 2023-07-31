@@ -74,7 +74,7 @@ const Header = () => {
 
                     <div className="nav-logo-container pad-4">
                         <img src={Logo2} alt="" />
-                        <p>Dine<span>Hub</span></p>
+                        <p>Dine<span style={{color:"#484848"}}>Hub</span></p>
                     </div>
 
                     {/* <div className="nav-logo-container pad-4" >
