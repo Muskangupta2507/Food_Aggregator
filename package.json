@@ -2,7 +2,7 @@
   "name": "eatsure",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://muskangupta2507.github.io/Food_Aggregator",
+  
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
