@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/Food_Aggregator/static/css/main.37910603.css",
+    "main.js": "/Food_Aggregator/static/js/main.8b9b97b1.js",
+    "static/js/787.9ae78795.chunk.js": "/Food_Aggregator/static/js/787.9ae78795.chunk.js",
+    "static/media/banner.png": "/Food_Aggregator/static/media/banner.00a0197063ab629b7954.png",
+    "static/media/home-banner-image.png": "/Food_Aggregator/static/media/home-banner-image.a41849b23e5c36d66717.png",
+    "static/media/3.png": "/Food_Aggregator/static/media/3.8b0dc813fdfcbe367e58.png",
+    "static/media/Brown White Colorful Brush Stroke Illustration Travel Vlog Youtube Thumbnail.png": "/Food_Aggregator/static/media/Brown White Colorful Brush Stroke Illustration Travel Vlog Youtube Thumbnail.52d2d1ac92bbb865735c.png",
+    "static/media/2.png": "/Food_Aggregator/static/media/2.baa304c4471372684c3d.png",
+    "static/media/about-background-image.png": "/Food_Aggregator/static/media/about-background-image.d0e45280dd69dec26ee6.png",
+    "static/media/rest5.jpg": "/Food_Aggregator/static/media/rest5.3541808809ae8c7c0637.jpg",
+    "static/media/rest1.jpeg": "/Food_Aggregator/static/media/rest1.13f0640b83ab6836ba65.jpeg",
+    "static/media/rest6.jpg": "/Food_Aggregator/static/media/rest6.1d214506de468950a1e4.jpg",
+    "static/media/rest3.jpg": "/Food_Aggregator/static/media/rest3.6639c8efa6171c277905.jpg",
+    "static/media/rest2.jpeg": "/Food_Aggregator/static/media/rest2.85e34046820422929ea7.jpeg",
+    "static/media/rest4.jfif": "/Food_Aggregator/static/media/rest4.aca7d883d0e0886836b8.jfif",
+    "static/media/home-banner-background.png": "/Food_Aggregator/static/media/home-banner-background.585600da7ff85661555e.png",
+    "static/media/dine_logo1.png": "/Food_Aggregator/static/media/dine_logo1.1478923c761d4aecf90e.png",
+    "index.html": "/Food_Aggregator/index.html",
+    "static/media/home.svg": "/Food_Aggregator/static/media/home.c71c0b295a4529fcd03d3fe6478e76ee.svg",
+    "main.37910603.css.map": "/Food_Aggregator/static/css/main.37910603.css.map",
+    "main.8b9b97b1.js.map": "/Food_Aggregator/static/js/main.8b9b97b1.js.map",
+    "787.9ae78795.chunk.js.map": "/Food_Aggregator/static/js/787.9ae78795.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.37910603.css",
+    "static/js/main.8b9b97b1.js"
+  ]
+}
