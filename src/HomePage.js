@@ -6,10 +6,6 @@ import Testimonial from "./components/LandingPage/Testimonial";
 import Contact from "./components/LandingPage/Contact";
 import Footer from "./components/LandingPage/Footer";
 import Navbar from "./components/LandingPage/Navbar"; 
-import Navbar2 from "./components/navbar/navbar"; 
-import axios from "axios";
-import { useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
 
 function HomePage() {
 
