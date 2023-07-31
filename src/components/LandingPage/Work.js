@@ -1,5 +1,4 @@
 import React from "react";
-import PickMeals from "../../Assets/pick-meals-image.png";
 import { NavLink, useParams } from 'react-router-dom';
 
 import rest1 from "../../Assets/rest1.jpeg";
@@ -56,15 +55,20 @@ const Work = () => {
       </div>
       <div className="work-section-bottom">
         {workInfoData.map((data) => (
-          <NavLink to={`/resturent/${id}`} className="text-decoration-none text-light">
+          
           <div className="work-section-info" key={data.title}>
+            <NavLink to={`/resturent/${id}`} className="text-decoration-none">
+            <div className="work-section-info">
             <div className="info-boxes-img-container">
               <img src={data.image} alt="" />
             </div>
             <h2>{data.title}</h2>
             <p>{data.text}</p>
+            </div>
+            </NavLink>
           </div>
-          </NavLink>
+
+          
         ))}
       </div>
     </div>

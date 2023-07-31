@@ -25,8 +25,8 @@ const Home = () => {
 
           <a href="#order" className="text-decoration-none">
           <button className="secondary-button">
-            <a href="#orderNow">
-            Order Now</a> <FiArrowRight />{" "}
+            
+            Order Now <FiArrowRight />{" "}
           </button>
           </a>
           

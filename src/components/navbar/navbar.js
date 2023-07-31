@@ -6,7 +6,7 @@ import Logo from "../../Assets/dine_logo1.png";
 
 const Navbar = (props) => {
 
-  const { id } = useParams();
+  const { id } = useParams(); 
   const navigate = useNavigate();
   const [payload, updatePayload] = useState({ name: "", password: "" });
   const [isPasswordShown, updateIsPasswordShown] = useState(false);
@@ -93,7 +93,7 @@ const Navbar = (props) => {
       <div className="container-fluid">
       <div className="nav-logo-container pad-4">
         <img src={Logo} alt="" />
-        <p>Dine Hub</p>
+        <p>Dine<span>Hub</span></p>
       </div>
       <div className="navbar-links-container pad-4">
         <a href="#home">Home</a>

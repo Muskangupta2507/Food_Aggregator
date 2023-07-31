@@ -70,10 +70,17 @@ const Header = () => {
             {/* #e48f0f */}
                 <Container>
                     <NavLink to={`/user/${id}`} className="text-decoration-none text-light" >
-                    <div className="nav-logo-container pad-4" >
+
+
+                    <div className="nav-logo-container pad-4">
+                        <img src={Logo2} alt="" />
+                        <p>Dine<span>Hub</span></p>
+                    </div>
+
+                    {/* <div className="nav-logo-container pad-4" >
                       <img src={Logo2} alt=""/>
                       <p style={{color:'#e48f0f'}}>Dine Hub</p>
-                    </div>
+                    </div> */}
 
                     {/* <div className="nav-logo-container">
                         <img src={Logo} alt="" />
@@ -92,7 +99,7 @@ const Header = () => {
                           <img src={home} alt=''/>
                           {/* <i className="bi bi-house-check-fill"  style={{fontSize:25, cursor: "pointer"}}>Hello</i> */}
                           </NavLink>
-                        <i class="fa-solid fa-cart-shopping" style={{ fontSize: 25, cursor: "pointer", color:"#e48f0f", paddingLeft:'20px', paddingRight:'10px' }}></i>
+                        <i className="fa-solid fa-cart-shopping" style={{ fontSize: 25, cursor: "pointer", color:"#e48f0f", paddingLeft:'20px', paddingRight:'10px' }}></i>
                     </Badge>
                   
                 </Container>

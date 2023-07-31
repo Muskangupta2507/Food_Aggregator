@@ -15,7 +15,7 @@ import { Padding } from '@mui/icons-material';
 import Header from './Header' ;
 import {
   MDBCarousel,
-  MDBCarouselItem,
+  MDBCarouselItem
 } from 'mdb-react-ui-kit';
 
 const Cards = () => {
@@ -45,7 +45,7 @@ const Cards = () => {
     <>
     <Header />
     <div className='container mt-3'>
-    <MDBCarousel showControls showIndicators white fade>
+    <MDBCarousel showControls showIndicators fade style={{zIndex: -1}}>
       <MDBCarouselItem
         className='w-100 d-block'
         itemId={1}
@@ -76,7 +76,7 @@ const Cards = () => {
             return (
               <>
                 
-                <Card style={{ width: '22rem',border:"none" }} className="mx-2 mt-4 card_style">
+                <Card style={{ width: '22rem',border:"none" }} className="mx-2 mt-4 card_style" key={element.id}>
                 
                   <Card.Img variant="top" src={element.imgdata} style={{height:"16rem"}} className="mt-3" />
                   

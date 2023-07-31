@@ -59,7 +59,7 @@ const Navbar = () => {
         <a href="#test" >Testimonials</a>
         <a href="#contact">Contact</a>
         <NavLink to={`/login`} className="text-decoration-none text-light">
-        <a href=""><button className="primary-button"> Order Now</button></a>
+        <button className="primary-button"> Order Now</button>
         </NavLink>
       </div>
       <div className="navbar-menu-container">
