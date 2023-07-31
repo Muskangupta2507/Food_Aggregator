@@ -6,10 +6,11 @@ import './style.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { ADD } from '../../redux/actions/action';
 import handleClose from './Header';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import Banner from "./banner.png";
 import { Padding } from '@mui/icons-material';
 import Header from './Header' 
+import { useEffect } from 'react';
 
 const Cards = () => {
 
@@ -25,6 +26,14 @@ const Cards = () => {
     // console.log(e);
     dispatch(ADD(e));
   }
+
+  const navigate = useNavigate();
+  useEffect(() => {
+    if (!sessionStorage.name)
+        navigate('/login')
+  }, [navigate]);
+
+  
 
   return (
     <>

@@ -128,14 +128,14 @@ useEffect(()=>{
 export default Header*/
 
 import React, { useEffect, useState } from 'react'
-import Logo from "./Logo.svg";
+import home from "./home.svg";
 import Navbar from 'react-bootstrap/Navbar'
 import Container from 'react-bootstrap/Container'
 import Badge from '@mui/material/Badge';
 import Nav from 'react-bootstrap/Nav'
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
-import { NavLink } from 'react-router-dom';
+import { NavLink,useNavigate,useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import Table from 'react-bootstrap/esm/Table';
 import { DLT, REMOVE } from '../../redux/actions/action';
@@ -155,6 +155,7 @@ const Header = () => {
 
     const [anchorEl, setAnchorEl] = useState(null);
     const open = Boolean(anchorEl);
+    const { id } = useParams();
     const handleClick = (event) => {
         setAnchorEl(event.currentTarget);
     };
@@ -185,18 +186,22 @@ const Header = () => {
         setPrice(price);
     };
 
+    const navigate = useNavigate();
+
+
     useEffect(()=>{
         total();
     },[total])
 
     return (
         <>
-            <Navbar sticky='top' style={{ height: "60px", backgroundColor: '#e48f0f' }}>
+            <Navbar sticky='top' style={{ height: "60px", backgroundColor: 'white' }}>
+            {/* #e48f0f */}
                 <Container>
-                    <NavLink to="/" className="text-decoration-none text-light" >
-                    <div className="nav-logo-container pad-4">
-                      <img src={Logo2} alt="" />
-                      <p style={{color:'white'}}>Dine Hub</p>
+                    <NavLink to={`/user/${id}`} className="text-decoration-none text-light" >
+                    <div className="nav-logo-container pad-4" >
+                      <img src={Logo2} alt=""/>
+                      <p style={{color:'#e48f0f'}}>Dine Hub</p>
                     </div>
 
                     {/* <div className="nav-logo-container">
@@ -205,7 +210,7 @@ const Header = () => {
                     
                     </NavLink>
                     <Nav className="me-auto">
-                        <NavLink to="/" className="text-decoration-none text-light" style={{fontSize:'25px', paddingLeft:'30px'}}>Home</NavLink>
+                        
                     </Nav>
 
                     <Badge badgeContent={getdata.length} color="primary"
@@ -215,7 +220,11 @@ const Header = () => {
                         aria-expanded={open ? 'true' : undefined}
                         onClick={handleClick}
                     >
-                        <i class="fa-solid fa-cart-shopping text-light" style={{ fontSize: 25, cursor: "pointer" }}></i>
+                        <NavLink to={`/user/${id}`} className="text-decoration-none">
+                          <img src={home} alt=''/>
+                          {/* <i className="bi bi-house-check-fill"  style={{fontSize:25, cursor: "pointer"}}>Hello</i> */}
+                          </NavLink>
+                        <i class="fa-solid fa-cart-shopping" style={{ fontSize: 25, cursor: "pointer", color:"#e48f0f", paddingLeft:'20px', paddingRight:'10px' }}></i>
                     </Badge>
 
                 </Container>
@@ -248,7 +257,7 @@ const Header = () => {
                                                 <>
                                                     <tr>
                                                         <td>
-                                                        <NavLink to={`/cart/${e.id}`}   onClick={handleClose}>
+                                                        <NavLink to={`/cart/${id}/${e.id}`}   onClick={handleClose}>
                                                         <img src={e.imgdata} style={{width:"5rem",height:"5rem"}} alt="" />
                                                         </NavLink>   
                                                         </td>

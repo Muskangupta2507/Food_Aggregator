@@ -1,8 +1,10 @@
 import React from "react";
 import PickMeals from "../../Assets/pick-meals-image.png";
-import { NavLink } from 'react-router-dom';
+import { NavLink, useParams } from 'react-router-dom';
+
 
 const Work = () => {
+  const { id } = useParams();
   const workInfoData = [
     {
       image: PickMeals,
@@ -25,8 +27,9 @@ const Work = () => {
       text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et ",
     },
   ];
+
   return (
-    <div className="work-section-wrapper pad-4">
+    <div className="work-section-wrapper pad-4" id="order">
       <div className="work-section-top">
         <p className="primary-subheading">Order Now</p>
         <h1 className="primary-heading">Best Restaurants</h1>
@@ -37,7 +40,7 @@ const Work = () => {
       </div>
       <div className="work-section-bottom">
         {workInfoData.map((data) => (
-          <NavLink to="/resturent" className="text-decoration-none text-light">
+          <NavLink to={`/resturent/${id}`} className="text-decoration-none text-light">
           <div className="work-section-info" key={data.title}>
             <div className="info-boxes-img-container">
               <img src={data.image} alt="" />

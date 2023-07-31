@@ -15,6 +15,7 @@ const CardsDetails = () => {
 };
   // console.log(data);
 
+  const {Id} = useParams();
   const {id} = useParams();
   // console.log(id);
 
@@ -37,7 +38,7 @@ const CardsDetails = () => {
 
   const compare = ()=>{
     let comparedata = getdata.filter((e)=>{
-      return e.id == id
+      return e.id == Id
     });
     setData(comparedata);
   }
@@ -50,9 +51,9 @@ const CardsDetails = () => {
     dispatch(ADD(e));
   }
   
-  const dlt = (id)=>{
-    dispatch(DLT(id));
-    history("/resturent");
+  const dlt = (Id, id)=>{
+    dispatch(DLT(Id));
+    history(`/resturent/${id}`);
 }
 
 // remove one
@@ -63,7 +64,7 @@ const remove = (item)=>{
 
   useEffect(()=>{
     compare();
-  },[id])
+  },[Id])
 
   return (
     <>
@@ -91,7 +92,7 @@ const remove = (item)=>{
                     <p> <strong>Dishes</strong>  : {ele.address}</p>
                     <p> <strong>Total</strong>  :₹  {ele.price * ele.qnty}</p>
                     <div className='mt-5 d-flex justify-content-between align-items-center' style={{width:100,cursor:"pointer",background:"#ddd",color:"#111"}}>
-                    <span style={{fontSize:24}} onClick={ele.qnty <=1 ? ()=>dlt(ele.id) : ()=>remove(ele)}>-</span>
+                    <span style={{fontSize:24}} onClick={ele.qnty <=1 ? ()=>dlt(ele.id, id) : ()=>remove(ele)}>-</span>
                     <span style={{fontSize:22}}>{ele.qnty}</span>
                     <span style={{fontSize:24}} onClick={()=>send(ele)}>+</span>
 
@@ -101,10 +102,10 @@ const remove = (item)=>{
                   <td>
                     <p><strong>Rating :</strong> <span style={{background:"green",color:"#fff",padding:"2px 5px",borderRadius:"5px"}}>{ele.rating} ★	</span></p>
                     <p><strong>Order Review :</strong> <span >{ele.somedata}	</span></p>
-                    <p><strong>Remove :</strong> <span ><i className='fas fa-trash' onClick={()=>dlt(ele.id)} style={{color:"red",fontSize:20,cursor:"pointer"}}></i>	</span></p>
+                    <p><strong>Remove :</strong> <span ><i className='fas fa-trash' onClick={()=>dlt(ele.id, id)} style={{color:"red",fontSize:20,cursor:"pointer"}}></i>	</span></p>
                   </td>
                   <td>
-                  <NavLink to="/resturent" className="text-decoration-none">
+                  <NavLink to={`/resturent/${id}`} className="text-decoration-none">
                   <i className='fas fa-close smallclose'
                      style={{fontSize:23,cursor:"pointer", color:'black', top:-140, left:-10, position:'relative'}}></i>
                   </NavLink>

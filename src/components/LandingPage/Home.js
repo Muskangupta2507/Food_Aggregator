@@ -3,10 +3,11 @@ import BannerBackground from "../../Assets/home-banner-background.png";
 import BannerImage from "../../Assets/home-banner-image.png";
 // import Navbar from "./Navbar";
 import { FiArrowRight } from "react-icons/fi";
+import { NavLink } from 'react-router-dom';
 
 const Home = () => {
   return (
-    <div className="home-container">
+    <div className="home-container" id="home">
       {/* <Navbar /> */}
       <div className="home-banner-container">
         <div className="home-bannerImage-container">
@@ -20,9 +21,13 @@ const Home = () => {
             Healthy switcher chefs do all the prep work, like peeding, chopping
             & marinating, so you can cook a fresh food.
           </p>
+
+          <a href="#order" className="text-decoration-none">
           <button className="secondary-button">
             Order Now <FiArrowRight />{" "}
           </button>
+          </a>
+          
         </div>
         <div className="home-image-section">
           <img src={BannerImage} alt="" />
