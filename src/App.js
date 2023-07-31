@@ -11,15 +11,6 @@ import User from './components/userPage/user';
 import Login from './components/loginPage/login';
 
 function App() {
-
-  const navigate = useNavigate();
-
-  // useEffect(() => {
-  //   if (!sessionStorage.name)
-  //     navigate('/')
-  // }, [navigate])
-
-
   return (
     <>
       <Routes>

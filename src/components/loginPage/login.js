@@ -55,18 +55,18 @@ const Login = () => {
 
   const loginSubmitHandler = (event) => {
     event.preventDefault();
-    updateIsLoading(true)
+    updateIsLoading(true);
 
     const url = `${window.API_URL}/login`;
     axios.post(url, payload)
       .then((res) => {
-        updateIsLoading(false)
+        updateIsLoading(false);
         if (res?.status === 200) {
           alert(res?.data?.msg);
           sessionStorage.setItem("name", res?.data?.data?.name);
           sessionStorage.setItem("email", res?.data?.data?.email);
           sessionStorage.setItem("notes", JSON.stringify(res?.data?.data?.notes));
-          navigate(`/user/${res?.data?.data?._id}`)
+          navigate(`/user/${res?.data?.data?._id}`);
         }
         else if (res.status === 401) {
           alert(res?.data?.msg);
