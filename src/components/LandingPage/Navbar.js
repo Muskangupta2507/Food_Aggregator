@@ -48,7 +48,7 @@ const Navbar = () => {
     },
     {
       text: "Login",
-      path: "/login",
+      path: "",
       icon: <LoginIcon />,
     },
   ];
@@ -80,7 +80,7 @@ const Navbar = () => {
           <List>
             {menuOptions.map((item) => (
               <ListItem key={item.text} disablePadding>
-                <ListItemButton href={item.path}>
+                <ListItemButton href={item.path} onClick={() => item.text=='Login'? navigate('/login'): ()=>{}}>
                   <ListItemIcon>{item.icon}</ListItemIcon>
                   <ListItemText primary={item.text}  />
                 </ListItemButton>
